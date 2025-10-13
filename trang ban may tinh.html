@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thuận Laptop Store</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background-color: #f6f8fa;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #0a66c2, #004182);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    header h1 {
+      font-size: 36px;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 16px;
+      margin-top: 8px;
+      opacity: 0.9;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0a66c2;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #004182;
+      border-bottom: 2px solid #004182;
+      padding-bottom: 3px;
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #004182;
+    }
+
+    /* PRODUCT GRID */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 30px;
+    }
+
+    /* CARD */
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+    .card-content h3 {
+      font-size: 18px;
+      color: #222;
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 17px;
+      color: #0a66c2;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    .btn {
+      background: linear-gradient(135deg, #0a66c2, #004182);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: linear-gradient(135deg, #004182, #002f5c);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0a66c2;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 60px;
+      font-size: 15px;
+    }
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>💻 Thuận Laptop Store</h1>
+    <p>Laptop chính hãng | Giá tốt | Bảo hành 24 tháng</p>
+  </header>
+
+  <nav>
+    <a href="#">Trang chủ</a>
+    <a href="#">Sản phẩm</a>
+    <a href="#">Giới thiệu</a>
+    <a href="#">Liên hệ</a>
+  </nav>
+
+  <div class="container">
+    <h2>Sản phẩm nổi bật</h2>
+    <div class="product-grid">
+
+      <div class="card">
+        <img src="https://cdn.tgdd.vn/Products/Images/44/322059/Slider/vi-vn-asus-tuf-gaming-f15-fx507zu-lp224w-slider-1.jpg" alt="Laptop 1">
+        <div class="card-content">
+          <h3>Asus TUF Gaming F15</h3>
+          <p class="price">25.990.000₫</p>
+          <button class="btn">🛒 Mua ngay</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.tgdd.vn/Products/Images/44/320100/hp-pavilion-14-dv2072tu-i5-7c0q3pa-1-1.jpg" alt="Laptop 2">
+        <div class="card-content">
+          <h3>HP Pavilion 14</h3>
+          <p class="price">16.490.000₫</p>
+          <button class="btn">🛒 Mua ngay</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.tgdd.vn/Products/Images/44/317304/macbook-air-m2-2022-15-inch-xanh-1.jpg" alt="Laptop 3">
+        <div class="card-content">
+          <h3>MacBook Air M2 2022</h3>
+          <p class="price">32.990.000₫</p>
+          <button class="btn">🛒 Mua ngay</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.tgdd.vn/Products/Images/44/316084/dell-inspiron-15-3520-i5-12094301-1.jpg" alt="Laptop 4">
+        <div class="card-content">
+          <h3>Dell Inspiron 15 3520</h3>
+          <p class="price">18.490.000₫</p>
+          <button class="btn">🛒 Mua ngay</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2025 <a href="#">Thuận Laptop Store</a> | Thiết kế bởi <strong>Phan Ngọc Thuận</strong>
+  </footer>
+
+</body>
+</html>
