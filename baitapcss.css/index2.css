@@ -1,0 +1,113 @@
+/* ----- Toàn trang ----- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #FFF8F2; 
+  color:white ;
+  margin: 0;
+  padding: 0;
+}
+
+/* ----- Header ----- */
+header {
+  background: #FFB347; /* cam nhạt */
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+}
+/* ----- Menu chính ----- */
+nav {
+  background: #FF9966;
+  text-align: center;
+}
+nav ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+nav ul.menu > li {
+  position: relative;
+}
+nav ul.menu > li > a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav ul.menu > li > a:hover {
+  background: #FF7F50;
+  border-radius: 5px;
+}
+
+/* ----- Menu con ----- */
+ul.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #FFD580; /* cam nhat */
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 160px;
+  border-radius: 8px;
+}
+
+ul.submenu li a {
+  color: #333;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+ul.submenu li a:hover {
+  background: #FFB347;
+  color: white;
+  border-radius: 8px;
+}
+nav ul.menu li:hover > ul.submenu {
+  display: block;
+}
+
+/* ----- Banner ----- */
+.banner {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #FFB347, #FF9966);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 12px;
+  margin: 30px auto;
+  width: 80%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ----- Footer ----- */
+footer {
+  background: #FF9966;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 14px;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+}
