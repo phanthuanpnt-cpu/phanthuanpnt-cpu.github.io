@@ -1,17 +1,101 @@
-<main>
-   
-    <h2>Sự kiện -Tin tức</h2>
-    <div class="new">
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sự kiện - Tin tức | Đại học Đại Nam</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #f0f9ff, #ffffff);
+      color: #333;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #0077b6;
+      font-size: 28px;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #0077b6;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .news-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #e3f2fd;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      color: #01579b;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      font-size: 15px;
+      margin: 5px 0;
+    }
+
+    .date {
+      font-style: italic;
+      color: #666;
+      margin-top: 8px;
+    }
+
+    .reward {
+      color: #d84315;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <h2>Sự kiện - Tin tức</h2>
+
+    <div class="news-container">
+      
+      <div class="card">
+        <h3> Hội thi chạy tiếp sức</h3>
+        <p>Nhà trường tổ chức cho các khoa tham gia thi đấu thể thao.</p>
+        <p class="date"> Bắt đầu từ ngày: <strong>03/11/2025</strong></p>
+        <p class="reward"> Giải thưởng lên tới 5.000.000 VNĐ</p>
+      </div>
+
+      <div class="card">
+        <h3> Thông báo tuyển sinh Đại học Đại Nam</h3>
+        <p>Chương trình tuyển sinh với nhiều học bổng hấp dẫn cho sinh viên.</p>
+        <p class="date"> Nhận hồ sơ từ: <strong>10/11/2025</strong></p>
+        <p class="reward"> Học bổng lên tới 100%</p>
+      </div>
+
     </div>
-    <div class="card">
-        <h3>Hội thi chạy tiếp sức</h3>
-        <p>Nhà trường tổ chức cho các khoa</p>
-    </div>
-    <div class="card"></div> 
-<p>bắt đầu từ ngày 3/11/2025</p>
-<p>giải thưởng lên tới 5m</p>
-<div class="card">
-        <h3>Thông báo tuyển sinh Đại học đại nam</h3>
-        <p>với các học bổng hấp dẫn</p>
-    </div>
-</main>
+  </main>
+
+</body>
+</html>
