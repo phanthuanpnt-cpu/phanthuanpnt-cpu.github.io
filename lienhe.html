@@ -6,83 +6,66 @@
   <title>Liên hệ Khoa CNTT - Đại học Đại Nam</title>
   <style>
     body {
-      font-family: "Segoe UI", Tahoma, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      background-color: #f5f5f5;
       color: #333;
     }
 
     main {
       max-width: 600px;
-      margin: 60px auto;
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
     }
 
     h2 {
       text-align: center;
-      color: #00796b;
-      font-size: 26px;
-      margin-bottom: 25px;
-      border-bottom: 3px solid #00796b;
-      display: inline-block;
-      padding-bottom: 5px;
+      color: #00695c;
+      margin-bottom: 20px;
+      font-size: 22px;
     }
 
     form {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 12px;
     }
 
     label {
       font-weight: bold;
-      margin-bottom: 5px;
+      font-size: 14px;
     }
 
     input, textarea {
       width: 100%;
-      padding: 10px;
-      border: 1px solid #b2dfdb;
-      border-radius: 8px;
-      font-size: 15px;
-      transition: 0.3s;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
     }
 
-    input:focus, textarea:focus {
-      border-color: #00796b;
-      box-shadow: 0 0 5px rgba(0,121,107,0.3);
-      outline: none;
+    textarea {
+      resize: vertical;
     }
 
     button {
-      width: 120px;
+      width: 100px;
       align-self: center;
-      background: #00796b;
-      color: white;
+      background: #00695c;
+      color: #fff;
       border: none;
-      padding: 10px;
-      border-radius: 8px;
-      font-size: 16px;
+      padding: 8px;
+      border-radius: 5px;
       cursor: pointer;
-      transition: background 0.3s, transform 0.2s;
+      margin-top: 10px;
+      font-size: 14px;
     }
 
     button:hover {
       background: #004d40;
-      transform: translateY(-2px);
-    }
-
-    /* Hiệu ứng nhẹ cho toàn bộ form */
-    form {
-      animation: fadeIn 0.6s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(10px);}
-      to {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
@@ -101,9 +84,9 @@
       <input type="text" id="chude" name="chude">
 
       <label for="noidung">Nội dung:</label>
-      <textarea id="noidung" name="noidung" rows="4" placeholder="Nhập nội dung liên hệ tại đây..."></textarea>
+      <textarea id="noidung" name="noidung" rows="4" placeholder="Nhập nội dung tại đây..."></textarea>
 
-      <button type="submit">📨 Gửi</button>
+      <button type="submit">Gửi</button>
     </form>
   </main>
 
